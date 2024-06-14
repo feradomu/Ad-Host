@@ -1,9 +1,8 @@
 [Adblock Plus 3.15]
-! Title: ▶️ YouTube: Pure Video Experience edit
+! Title: ▶️ YouTube: Even More Pure Video Experience
 ! Version: 11June2024v1
 ! Expires: 6 days
 ! Description: This list removes even more distracting or uncomfortable things on YouTube.
-! If you want to block even more things on top of these two lists, feel free to check out the anti-Autoplay (https://raw.githubusercontent.com/DandelionSprout/adfilt/master/StopAutoplayOnYouTube.txt) and anti-Elsagate (https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Anti-Elsagate%20List.txt) lists that I've made.
 !#if !env_mv3
 !#if !ext_ubol
 !#if !adguard_ext_android_cb
