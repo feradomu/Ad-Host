@@ -3,6 +3,8 @@
 ! Version: 11June2024v1
 ! Expires: 6 days
 ! Description: This list removes even more distracting or uncomfortable things on YouTube.
+! If you want to block even more things on top of these two lists, feel free to check out the anti-Autoplay (https://raw.githubusercontent.com/DandelionSprout/adfilt/master/StopAutoplayOnYouTube.txt) and anti-Elsagate (https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Anti-Elsagate%20List.txt) lists that I've made.
+! Homepage: https://github.com/DandelionSprout/adfilt/blob/master/Wiki/General-info.md#-english
 !#if !env_mv3
 !#if !ext_ubol
 !#if !adguard_ext_android_cb
@@ -78,45 +80,4 @@ youtube.com##.ytp-pause-overlay
 ! Removes the frontpage link from the upper left YouTube logo (Not supported by ABP or AdBlock)
 youtube.com#?##logo:style(pointer-events: none !important; cursor: default !important)
 
-! Removes video epilogue suggestion overlays
-youtube.com##.ytp-ce-element
-youtube.com##.ytp-cards-button-icon
-youtube.com##.ytp-endscreen-content
-
-! Removes the Watch Later and Add to Queue overlays
-youtube.com##.ytd-thumbnail-overlay-toggle-button-renderer
-
-! Seems to remove suggestions on mobile
-m.youtube.com##ytm-slim-metadata-watch-next-shelf
-m.youtube.com##.watch-skeleton
-
-! Disables autoscrolling to the next video in the same playlist
-youtube.com##.ytd-playlist-panel-renderer.style-scope
-! I'm not sure how well the following entry works:
-youtube.com##.playlist-autoscroll-active
-youtube.com##.ytp-endscreen-autoplay-icon
-
-! Removes the YouTube Premium button in the left-hand menu
-youtube.com##ytd-guide-entry-renderer:has(a[href*="paid_memberships"])
-
-! Seems to remove certain suggestions on the frontpage
-youtube.com##ytd-rich-shelf-renderer.ytd-browse
-youtube.com##ytd-browse[page-subtype=home]:nth-of-type(1) ytd-rich-grid-renderer
-
-! These AdGuard rules should work on Android
-m.youtube.com##.movie-vignette-background-image
-||youtube.com^$xmlhttprequest,domain=m.youtube.com
-m.youtube.com##ytd-mealbar-promo-renderer
-m.youtube.com##ytm-promo-renderer
-m.youtube.com##.notification-promo
-
-! (This particular line is commented out, and has been retained for posterity.)
-!youtube.com##+js(acis, Object.defineProperty, navigator)
-
-!#endif
-
-!#endif
-
-!#endif
-
-!#endif
+! Removes video ep
